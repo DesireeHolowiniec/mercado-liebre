@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway&family=Roboto&display=swap');
+
+@import "/public/css/register.css"; 
+
+/* font-family: 'Roboto', sans-serif;*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+/*header*/
+
+header {
+    background-color: #EAC926;
+    color: #03264C;
+    height: fit-content
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+img.logo {
+    width: 50%;
+    padding-left: 6vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.search-section {
+    width: 50%;
+    padding-left: 6vw;
+    padding-top: 5px;
+    padding-bottom: 6vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    width: 80%;
+    height: 24px;
+    border: white solid 5px;
+}
+
+
+.search-button {
+    color: #666;
+    padding: 0px;
+    height: 24px;
+    background-color: white;
+    border: 0;
+    padding-right: 3px;
+
+}
+
+
+.copy-header {
+    text-align: center;
+    margin: auto;
+
+    width: 100%;
+    font-size: 12px;
+}
+
+.burger-menu {
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.hamburguer-button {
+    background-color: #1259c3;
+    color: white;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.main-navbar {
+    padding-left: 0px;
+    display: none;
+    padding-bottom: 12px;
+}
+
+.main-navbar ul li {
+    font-size: 9px;
+    list-style-type: none;
+}
+
+.main-navbar ul li a {
+    text-decoration: none;
+}
+
+
+
+
+/*ver como hacer para que no quede espacio entre la img y el titulo*/
+/*.banner{
+    position: relative;
+}*/
+
+.img-banner {
+    width: 100vw;
+    height: 100%;
+    margin:0px;
+    padding: 0px 
+
+}
+
+/*tamaños de letras gral+productos*/
+.main {
+    width: 90vw;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    padding: 15px 0;
+}
+
+.price {
+    font-size: 18px;
+    margin: 0px;
+    padding-right: 15px
+}
+
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0px
+}
+
+.last-visit,
+.offers {
+    align-items: center;
+}
+
+.product-name {
+    display: none;
+    font-size: 16px;
+    padding-top: 15px;
+    transition: display 800ms
+}
+
+
+
+
+.product {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.img-product {
+    width: 100%;
+    display: block;
+}
+
+.content-product {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.discount-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+}
+
+.content-product:hover .product-name{
+display: block;
+
+}
+.content-product:hover i{
+    transform: rotate(-90deg);
+}
+
+/* el camion se va para arriba*/
+main section article i {
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+}
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: white;
+    color: black;
+    padding-top: 50px;
+}
+
+.footer-content {
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+
+.footer-icon {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 16px;
+    margin: 2px 0px;
+
+}
+
+.footer-description {
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+/*REGISTER*/
+
+ .form-register {
+    padding: 20px;
+    width: 100%
+}
+
+.control-register-form {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.checkbox-category{
+    display: flex;
+    flex-direction: column;
+}
+.control-register-form label {
+    margin-bottom: 10px;
+}
+
+.control-register-form input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    padding-left: 3px;
+}
+
+.title-register {
+    font-weight: 600;
+}
+
+.reset-button,
+.submit-button {
+    margin: 20px 5px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.reset-button {
+    background-color: #666;
+}
+
+.submit-button {
+    background-color: #1259c3;
+} 
+
+.button-send-reset-register{
+    width: 20%;
+display: flex;
+margin: auto;
+justify-content: space-evenly;
+}
+
+/*LOGIN*/
+.form-login {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-login-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.control-login-form input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    padding-left: 3px;
+}
+
+.control-login-form label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.login-submit-botton{
+    background-color: #666;
+    width: 50%;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    transition: 450ms;
+}
+
+.login-submit-botton:hover{
+    background-color: #0022aa;
+}
+/*media queries tablet*/
+
+@media(min-width: 361px) {
+
+    .top-header {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo,
+    .search-section,
+    .copy-header {
+        max-width: 33%;
+    }
+
+    .search-section {
+        padding: 0;
+    }
+
+
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar ul li {
+        margin: 0 2px;
+    }
+
+    .product-name {
+        display: block;
+    }
+li
+    .product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        width: 48%;
+        max-width: 300px;
+    }
+
+    .last-visit,
+    .offers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .copy-header {
+        font-size: 10px;
+    }
+
+}
+
+
+/*media queries desktop*/
+@media(min-width: 769px) {
+
+    .main-navbar ul li {
+        font-size: 14px;
+
+    }
+
+    .copy-header {
+        font-size: 16px;
+    }
+
+    .product {
+        width: 24%;
+        
+    }
+
+    .footer-content{
+        width: 100vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .footer-wrap{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-icon{
+        transition: 500ms
+    }
+
+    .footer-wrap:hover .footer-icon{
+        color: #39b54a;
+
+    }
+
+    .main-navbar ul li {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+
+/*REGISTER*/
+
+     .control-register-form {
+        align-items: center;
+    } 
+
+    .subcontrol-register-form {
+        width: 50%;
+    }
+
+    .checkbox-category, .user-category{
+        width: 40%;
+        max-width: 300px;
+    }
+
+
+    .checkbox-category input, .user-category input{
+        width: 40px;
+        border: none;
+    }
+
+    /*LOGIN*/
+    .control-login-form {
+        align-items: center;
+    } 
+
+    .subcontrol-register-form, .login-submit-botton{
+        width: 80%;
+        max-width: 600px;
+    }
+
+   
+
+
+}
