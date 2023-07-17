@@ -151,7 +151,6 @@ h2 {
 }
 
 .product-name {
-    display: none;
     font-size: 16px;
     padding-top: 15px;
     opacity: 0;
@@ -195,7 +194,7 @@ h2 {
 .content-product:hover .product-name{
 display: block;
 opacity: 1;
-transition: 500ms;
+transition: all 700ms;
 
 }
 .content-product:hover i{
@@ -397,7 +396,7 @@ justify-content: space-evenly;
     }
 
     .product-name {
-        display: block;
+        opacity: 1;
     }
 
     .product {
