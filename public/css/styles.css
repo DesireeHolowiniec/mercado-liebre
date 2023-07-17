@@ -108,12 +108,6 @@ img.logo {
 
 
 
-
-/*ver como hacer para que no quede espacio entre la img y el titulo*/
-/*.banner{
-    position: relative;
-}*/
-
 .img-banner {
     width: 100vw;
     height: 100%;
@@ -160,7 +154,7 @@ h2 {
     display: none;
     font-size: 16px;
     padding-top: 15px;
-    transition: display 800ms
+    opacity: 0;
 }
 
 
@@ -200,13 +194,14 @@ h2 {
 
 .content-product:hover .product-name{
 display: block;
+opacity: 1;
+transition: 500ms;
 
 }
 .content-product:hover i{
     transform: rotate(-90deg);
 }
 
-/* el camion se va para arriba*/
 main section article i {
     display: flex;
     font-size: 16px;
